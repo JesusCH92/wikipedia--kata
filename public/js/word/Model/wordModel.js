@@ -13,7 +13,7 @@ const wordModel = (function ({view}){
                 const textInput = document.querySelector('#text_input');
                 const title = document.querySelector('#title');
                 const snippet = document.querySelector('#snippet');
-                view().paintElementInContainer({
+                view().paintPLainTextInContainer({
                     element: data['data']['input'],
                     container: textInput,
                 });

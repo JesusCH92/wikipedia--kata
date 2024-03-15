@@ -7,9 +7,14 @@ const wordRenderTemplate = (function () {
         container.innerHTML = element;
     };
 
+    const paintPLainTextInContainer = function ({container, element}) {
+        container.textContent = element;
+    };
+
     return {
         renderElementInContainer: renderElementInContainer,
         paintElementInContainer: paintElementInContainer,
+        paintPLainTextInContainer: paintPLainTextInContainer,
     };
 });
 
