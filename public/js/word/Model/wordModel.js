@@ -10,10 +10,20 @@ const wordModel = (function ({view}){
             })
             .then(data => {
                 console.log(data);
-                const resultContainer = document.querySelector('#result_container');
+                const textInput = document.querySelector('#text_input');
+                const title = document.querySelector('#title');
+                const snippet = document.querySelector('#snippet');
                 view().paintElementInContainer({
-                    element: data['message'],
-                    container: resultContainer,
+                    element: data['data']['input'],
+                    container: textInput,
+                });
+                view().paintElementInContainer({
+                    element: data['data']['title'],
+                    container: title,
+                });
+                view().paintElementInContainer({
+                    element: data['data']['snippet'],
+                    container: snippet,
                 });
             })
             .catch(error => {
