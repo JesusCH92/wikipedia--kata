@@ -7,7 +7,8 @@
     "symfony/http-foundation": "^7.0",
     "symfony/var-dumper": "^7.0",
     "ramsey/uuid": "^4.7",
-    "guzzlehttp/guzzle": "^7.8"
+    "guzzlehttp/guzzle": "^7.8",
+    "robmorgan/phinx": "^0.16.0"
   },
   "autoload": {
     "psr-4": {
