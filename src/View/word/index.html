@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<h1>Hello Prova!</h1>
+<h1>Buscador de wikipedia!</h1>
 
-<input type="text" name="_search" placeholder="Ex: Nelson Mandela" id="_searcher" required>
+<div class="border__container padding__container">
+    <input type="text" name="_search" placeholder="Escribe tu input, Ex: Nelson Mandela" id="_searcher" required>
+</div>
 
-<div class="container" id="result_container">
 
+<div class="container border__container padding__container" id="result_container">
+    <p id="text_input"></p>
+    <h3 id="title"></h3>
+    <div id="snippet"></div>
 </div>
 
 <script type="module" src="/js/word/index.js"></script>
