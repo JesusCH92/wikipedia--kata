@@ -24,7 +24,11 @@ abstract class Client
 
     public function get(string $url): array
     {
-        $response = $this->client()->request('GET', $url);
+        try {
+            $response = $this->client()->request('GET', $url);
+        } catch (\Exception $e) {
+            throw new \Exception('La API de wikipedia no response');
+        }
 
         return json_decode($response->getBody()->getContents(), true);
     }
