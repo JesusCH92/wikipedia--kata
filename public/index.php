@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Word\Infrastructure\Api\ApiWordController;
 use App\Word\Infrastructure\Controller\WordController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,6 +17,7 @@ $dc = [];
 
 $routes = [
     'word' => (new Route('/', ['_controller' => WordController::class]))->setMethods(['GET']),
+    'api_word' => (new Route('/api/word', ['_controller' => ApiWordController::class]))->setMethods(['GET']),
 ];
 
 $rc = new RouteCollection();
