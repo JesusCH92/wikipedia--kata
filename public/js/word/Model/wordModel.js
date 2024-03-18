@@ -9,7 +9,6 @@ const wordModel = (function ({view}){
                 return response.json();
             })
             .then(data => {
-                console.log(data);
                 const textInput = document.querySelector('#text_input');
                 const title = document.querySelector('#title');
                 const snippet = document.querySelector('#snippet');
