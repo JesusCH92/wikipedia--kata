@@ -1,6 +1,6 @@
 # WIKI KATA
 
-Stack tecnologico: PHP, MySQL, Nginx, Vanilla Js
+Stack tecnologico: PHP Puro, MySQL, Nginx, Vanilla Js
 
 ## Entorno Dockerizado
 
